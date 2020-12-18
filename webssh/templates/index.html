@@ -41,22 +41,22 @@
 
     <div class="container form-container" style="display: none">
       <form id="connect" action="" method="post" enctype="multipart/form-data"{% if debug %} novalidate{% end %}>
-        <div class="row">
-          <div class="col">
+        <div class="row" style="display: none">
+          <div class="col" style="display: none">
             <label for="Hostname">Hostname</label>
-            <input class="form-control" type="text" id="hostname" name="hostname" value="" required>
+            <input class="form-control" type="text" id="hostname" name="hostname" value="localhost" required>
           </div>
-          <div class="col">
+          <div class="col" style="display: none">
             <label for="Port">Port</label>
-            <input class="form-control" type="number" id="port" name="port" placeholder="22" value="" min=1 max=65535>
+            <input class="form-control" type="number" id="port" name="port" placeholder="22" value="9998" min=1 max=65535>
           </div>
         </div>
         <div class="row">
           <div class="col">
             <label for="Username">Username</label>
-            <input class="form-control" type="text" id="username" name="username" value="" required>
+            <input class="form-control" type="text" id="username" name="username" value="root" required>
           </div>
-          <div class="col">
+          <div class="col" style="display: none">
             <label for="Password">Password</label>
             <input class="form-control" type="password" id="password" name="password" value="">
           </div>
